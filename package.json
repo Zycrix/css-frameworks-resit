@@ -1,0 +1,28 @@
+{
+  "name": "css-frameworks_resit",
+  "version": "1.0.0",
+  "description": "Resit delivery for css frameworks CA",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass src/scss:dist/css",
+    "start": "sass --watch src/scss:dist/css",
+    "server": "live-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zycrix/css-frameworks-resit.git"
+  },
+  "author": "Kristoffer Mikkelsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zycrix/css-frameworks-resit/issues"
+  },
+  "homepage": "https://github.com/Zycrix/css-frameworks-resit#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.57.1"
+  }
+}

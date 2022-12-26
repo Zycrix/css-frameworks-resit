@@ -1,0 +1,54 @@
+@import "./_variables.scss"; /* /src/scss/_variables.scss */
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+.dropdown-toggle::after{
+  all:unset !important;
+}
+.dropdown-toggle span{
+  font-size: 3rem;
+}
+.btn.show{
+  border-color: white !important;
+}
+.hero{
+  background-image: url("/media/image.jpg");
+  min-height: 28vh;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: 50%, 50%;
+}
+.card{
+  border-radius: 1rem;
+}
+
+@include media-breakpoint-up(md){
+  .hero{
+    min-height: 35vh;
+  }
+}
+@include media-breakpoint-up(lg){
+  .hero{
+    min-height: 45vh;
+  }
+  .card{
+    height: 100%;
+  }
+  .dropdown-menu{
+    all:unset;
+    z-index:100;
+    display:inline-block !important;
+  }
+  .dropdown-item{
+    display:inline-block !important;
+  }
+}
+@include media-breakpoint-up(xl){
+  .hero{
+    min-height: 55vh;
+  }
+}
+@include media-breakpoint-up(xxl){
+  .hero{
+    min-height: 65vh;
+  }
+}
