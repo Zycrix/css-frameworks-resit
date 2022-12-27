@@ -15,24 +15,26 @@
   <header>
     <nav class = "navbar p-0 d-flex align-items-center">
       <div>
-        <a class = "navbar-brand navbar-text fs-1 text-dark px-3" href = "index.html">Stay Home</a>
+        <a class = "navbar-brand navbar-text fs-1 text-dark px-3 mx-xl-5" href = "index.html">Stay Home</a>
       </div>
       <div> <!--Intentionally not using the dropdown class here to make the dropdown position relative to the body rather than relative to this div-->
-        <button class="dropdown-toggle btn d-lg-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        <button class="dropdown-toggle btn d-xl-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="material-symbols-outlined" id="menu"> menu </span>
         </button>
-        <ul class = "dropdown-menu w-100 h-vh-50 d-lg-block px-3 fs-4 pb-5 border border-0 rounded-0 m-0 border-0 show">
-          <li><a href = "index.html" class = "nav-link dropdown-item py-2">HOME</a></li>
-          <li><a href = "products.html" class = "nav-link dropdown-item py-2">PRODUCTS</a></li>
-          <li><a href = "login.html" class = "nav-link dropdown-item py-2">LOGIN</a></li>
+        <ul class = "dropdown-menu w-100 h-vh-50 d-xl-flex align-items-center my-xl-3 px-3 px-xl-0 fs-4 pb-xl-0 pb-5 border border-0 rounded-0 m-0 border-0">
+          <li><a href = "index.html" class = "nav-link dropdown-item py-2 text-secondary px-xl-4">HOME</a></li>
+          <li><a href = "products.html" class = "nav-link dropdown-item py-2 px-xl-4">PRODUCTS</a></li>
+          <li><a href = "login.html" class = "nav-link dropdown-item py-2 px-xl-4">LOGIN</a></li>
         </ul>
       </div>
     </nav>
   </header>
   <main class = "bg-primary pb-3">
-    <section class = "hero w-100 d-flex align-items-end justify-content-center">
-      <p class = "hero_text bg-dark text-light w-50 mb-4 text-center bg-opacity-75 p-3 fs-5 rounded">View specials</p>
-      <p class = "hero_text bg-light text-dark d-none bg-opacity-75">Vestibulum tempus, massa vel congue faucibus, velit nibh faucibus tellus, at dictum odio nisi ut lacus. Curabitur consequat eros quam, at volutpat eros accumsan in. Sed mattis lectus euismod pretium tincidunt. Nam placerat pulvinar fermentum. Morbi et est dolor.</p>
+    <section class = "hero w-100 d-flex align-items-end flex-wrap justify-content-center">
+      <div class = "w-75 mx-auto">
+        <p class = "hero_text_title bg-dark text-light w-50 mb-4 mb-xl-2 mx-auto mx-xl-0 text-center bg-opacity-75 p-3 fs-5 rounded">View specials</p>
+        <p class = "hero_text bg-light text-dark d-none d-xl-block mb-xl-4 bg-opacity-75 p-3 rounded">Vestibulum tempus, massa vel congue faucibus, velit nibh faucibus tellus, at dictum odio nisi ut lacus. Curabitur consequat eros quam, at volutpat eros accumsan in. Sed mattis lectus euismod pretium tincidunt. Nam placerat pulvinar fermentum. Morbi et est dolor.</p>
+      </div>
     </section>
     <section class = "content">
       <h1 class = "text-light text-center m-4 fs-1">Don't Go Anywhere</h1>

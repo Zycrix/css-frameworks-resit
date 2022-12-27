@@ -20,7 +20,15 @@
 .card{
   border-radius: 1rem;
 }
-
+.product{
+  aspect-ratio: 1/1;
+}
+.product_container{
+  width:90%;
+}
+main{
+  min-height: calc(100vh - 204px)
+}
 @include media-breakpoint-up(md){
   .hero{
     min-height: 35vh;
@@ -33,18 +41,21 @@
   .card{
     height: 100%;
   }
+}
+@include media-breakpoint-up(xl){
   .dropdown-menu{
     all:unset;
     z-index:100;
-    display:inline-block !important;
+    list-style: none;
   }
   .dropdown-item{
     display:inline-block !important;
   }
-}
-@include media-breakpoint-up(xl){
   .hero{
     min-height: 55vh;
+  }
+  .hero_text_title{
+    width:25% !important;
   }
 }
 @include media-breakpoint-up(xxl){

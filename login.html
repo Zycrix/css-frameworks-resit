@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "dist/css/style.css">
+  <link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+/>
+  <title>Home</title>
+</head>
+<body>
+  <header>
+    <nav class = "navbar p-0 d-flex align-items-center">
+      <div>
+        <a class = "navbar-brand navbar-text fs-1 text-dark px-3 mx-xl-5" href = "index.html">Stay Home</a>
+      </div>
+      <div> <!--Intentionally not using the dropdown class here to make the dropdown position relative to the body rather than relative to this div-->
+        <button class="dropdown-toggle btn d-xl-none" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="material-symbols-outlined" id="menu"> menu </span>
+        </button>
+        <ul class = "dropdown-menu w-100 h-vh-50 d-xl-flex align-items-center my-xl-3 px-3 px-xl-0 fs-4 pb-xl-0 pb-5 border border-0 rounded-0 m-0 border-0">
+          <li><a href = "index.html" class = "nav-link dropdown-item py-2 text-secondary px-xl-4">HOME</a></li>
+          <li><a href = "products.html" class = "nav-link dropdown-item py-2 px-xl-4">PRODUCTS</a></li>
+          <li><a href = "login.html" class = "nav-link dropdown-item py-2 px-xl-4">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class = "bg-primary">
+
+  </main>
+  <footer class = "text-center text-muted">
+    <div class="info my-3">
+      <p>Tel: 123 456 789 | info@email.com</p>
+    </div>
+    <div class="icons my-3">
+      <img src = "media/linkedin.jpg" alt = "linkedin logo" class = "px-1">
+      <img src = "media/youtube.jpg" alt = "youtube logo" class = "px-1">
+    </div>
+    <div class="copyright my-3">
+      <p>Copyright 2020</p>
+    </div>
+  </footer>
+  <script src = "node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
