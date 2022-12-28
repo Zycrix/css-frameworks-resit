@@ -29,9 +29,28 @@
 main{
   min-height: calc(100vh - 204px)
 }
+.form_container{
+  width: 90%;
+}
+input::placeholder{
+  color: lightgray !important;
+}
+.form_button:hover{
+  background-color: $primary;
+  border-color: $primary;
+}
+*{
+  font-family: $primary-font;
+}
+h1, h2, h3, h4, .navbar-brand, .heading{
+  font-family: $heading-font;
+}
 @include media-breakpoint-up(md){
   .hero{
     min-height: 35vh;
+  }
+  .form_container{
+    width:80%;
   }
 }
 @include media-breakpoint-up(lg){
@@ -41,6 +60,9 @@ main{
   .card{
     height: 100%;
   }
+  .form_container{
+    width:60%;
+  }
 }
 @include media-breakpoint-up(xl){
   .dropdown-menu{
@@ -48,18 +70,27 @@ main{
     z-index:100;
     list-style: none;
   }
-  .dropdown-item{
-    display:inline-block !important;
-  }
   .hero{
     min-height: 55vh;
   }
   .hero_text_title{
     width:25% !important;
   }
+  .form_container{
+    width:40%;
+  }
+  .form_button{
+    width:45% !important;
+  }
+  .form_radio{
+    width:45% !important;
+  }
 }
 @include media-breakpoint-up(xxl){
   .hero{
     min-height: 65vh;
+  }
+  .form_container{
+    width:35%;
   }
 }

@@ -10806,9 +10806,33 @@ main {
   min-height: calc(100vh - 204px);
 }
 
+.form_container {
+  width: 90%;
+}
+
+input::placeholder {
+  color: lightgray !important;
+}
+
+.form_button:hover {
+  background-color: rgb(141, 189, 231);
+  border-color: rgb(141, 189, 231);
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .navbar-brand, .heading {
+  font-family: "Gentium Book Basic", serif;
+}
+
 @media (min-width: 768px) {
   .hero {
     min-height: 35vh;
+  }
+  .form_container {
+    width: 80%;
   }
 }
 @media (min-width: 992px) {
@@ -10818,6 +10842,9 @@ main {
   .card {
     height: 100%;
   }
+  .form_container {
+    width: 60%;
+  }
 }
 @media (min-width: 1200px) {
   .dropdown-menu {
@@ -10825,19 +10852,28 @@ main {
     z-index: 100;
     list-style: none;
   }
-  .dropdown-item {
-    display: inline-block !important;
-  }
   .hero {
     min-height: 55vh;
   }
   .hero_text_title {
     width: 25% !important;
   }
+  .form_container {
+    width: 40%;
+  }
+  .form_button {
+    width: 45% !important;
+  }
+  .form_radio {
+    width: 45% !important;
+  }
 }
 @media (min-width: 1400px) {
   .hero {
     min-height: 65vh;
+  }
+  .form_container {
+    width: 35%;
   }
 }
 
