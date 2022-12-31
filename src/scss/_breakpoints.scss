@@ -1,0 +1,49 @@
+@include media-breakpoint-up(md){
+  .hero{
+    min-height: 35vh;
+  }
+  .form_container{
+    width:80%;
+  }
+}
+@include media-breakpoint-up(lg){
+  .hero{
+    min-height: 45vh;
+  }
+  .card{
+    min-height: 20vh;
+  }
+  .form_container{
+    width:60%;
+  }
+}
+@include media-breakpoint-up(xl){
+  .dropdown-menu{
+    all:unset;
+    z-index:100;
+    list-style: none;
+  }
+  .hero{
+    min-height: 55vh;
+  }
+  .hero_text_title{
+    width:25% !important;
+  }
+  .form_container{
+    width:40%;
+  }
+  .form_button{
+    width:45% !important;
+  }
+  .form_radio{
+    width:45% !important;
+  }
+}
+@include media-breakpoint-up(xxl){
+  .hero{
+    min-height: 65vh;
+  }
+  .form_container{
+    width:35%;
+  }
+}

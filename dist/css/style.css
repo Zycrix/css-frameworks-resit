@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* /src/scss/_variables.scss */
+@import url("https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
@@ -10770,6 +10770,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.hero {
+  background-image: url("/media/image.jpg");
+  min-height: 28vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+
 .dropdown-toggle::after {
   all: unset !important;
 }
@@ -10782,12 +10790,12 @@ textarea.form-control-lg {
   border-color: white !important;
 }
 
-.hero {
-  background-image: url("/media/image.jpg");
-  min-height: 28vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 50%, 50%;
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, .navbar-brand, .heading {
+  font-family: "Gentium Book Basic", serif;
 }
 
 .card {
@@ -10819,14 +10827,6 @@ input::placeholder {
   border-color: rgb(141, 189, 231);
 }
 
-* {
-  font-family: "Open Sans", sans-serif;
-}
-
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, .navbar-brand, .heading {
-  font-family: "Gentium Book Basic", serif;
-}
-
 @media (min-width: 768px) {
   .hero {
     min-height: 35vh;
@@ -10840,7 +10840,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .navbar-brand, .heading {
     min-height: 45vh;
   }
   .card {
-    height: 100%;
+    min-height: 20vh;
   }
   .form_container {
     width: 60%;

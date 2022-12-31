@@ -1,0 +1,9 @@
+.dropdown-toggle::after{
+  all:unset !important;
+}
+.dropdown-toggle span{
+  font-size: 3rem;
+}
+.btn.show{
+  border-color: white !important;
+}
